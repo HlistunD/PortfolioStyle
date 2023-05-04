@@ -1,0 +1,960 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    width: 1440px;
+    height: 4146px;
+    background: #171719;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 48px;
+    margin-top: 32px;
+}
+
+.initial {
+    margin-left: 5%;
+    width: 80px;
+    height: 40px;
+    left: 70px;
+    top: 36px;
+}
+
+.navMenu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 6%;
+    padding: 0px;
+    gap: 30px;
+    width: 488px;
+    height: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+.btn {
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btnResume {
+    width: 162px;
+    height: 48px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnResume:hover {
+    background-color: #B4B4B4;
+    transition: 1s ease;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li:hover {
+    text-decoration: underline;
+    color: #B4B4B4;
+}
+
+ul {
+    list-style: none;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 90px;
+    cursor: pointer;
+}
+
+.iconOne {
+    fill: white;
+}
+
+.iconOne:hover svg,
+.iconTwo:hover svg {
+    fill: #B4B4B4;
+    transition: 1s ease;
+}
+
+.iconTwo {
+    fill: white;
+}
+
+.ovals {
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -6%;
+}
+
+h1 {
+    width: 463px;
+    height: 104px;
+    text-align: center;
+    font-family: 'Candal', sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 80px;
+    line-height: 104px;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    width: 386.5px;
+    height: 32px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 32px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.arrow {
+    position: absolute;
+    margin-top: 12%;
+    height: 205.34px;
+}
+
+.whoiamCase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photoQuote {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 228px;
+    height: 304px;
+    left: 306px;
+    top: 700px;
+
+}
+
+.aboutText {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.quote,
+.brush {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.paragraphOne {
+    position: absolute;
+    width: 547px;
+    height: 96px;
+    left: 617px;
+    top: 700px;
+    line-height: 24px;
+}
+
+.paragraphTwo {
+    position: absolute;
+    width: 417px;
+    height: 96px;
+    left: 755px;
+    top: 850px;
+    font-weight: 100;
+    line-height: 24px;
+}
+
+.skillSet {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headSkill {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 631px;
+    top: 1100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 36px;
+    line-height: 32px;
+}
+
+.skillPartOne {
+    position: absolute;
+    width: 535px;
+    height: 168px;
+    left: 167px;
+    top: 1250px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.skillPartTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 470.52px;
+    height: 290.94px;
+    position: absolute;
+    left: 798px;
+    top: 1200px;
+}
+
+.skillOval {
+    position: absolute;
+    width: 276px;
+    height: 520px;
+    transform: rotate(80deg);
+}
+
+.progrLang {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.skillArrow {
+    position: absolute;
+    left: 70%;
+    top: 110%;
+    transform: rotate(1deg);
+    min-width: 17%;
+}
+
+.blockExp {
+    display: flex;
+    justify-content: space-around;
+    width: 1005px;
+    height: 192px;
+    margin-left: 90px;
+    margin-top: 87%;
+}
+
+.headExp {
+    width: 204px;
+    height: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 32px;
+}
+
+.textExp {
+    width: 500px;
+    height: 192px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 25px;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 13%;
+}
+
+.projectsList {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.projects ul {
+    padding: 0;
+}
+
+.projectsList li {
+    text-decoration: none;
+    cursor: default;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.projectsList h4 {
+    width: 252px;
+    height: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 6px;
+    margin-left: 0;
+
+}
+
+.projectsList p {
+    width: 346px;
+    height: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: hard-light;
+}
+
+a img {
+    filter: grayscale(100%);
+    transition: filter 100ms ease;
+    mix-blend-mode: hard-light;
+}
+
+a:hover img {
+    filter: grayscale(0%);
+}
+
+.hidden {
+    display: none;
+}
+
+.selected {
+    transition: transform 1s ease-out;
+    transform: scale(1.05);
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-self: flex-end;
+    top: 5500px;
+    position: absolute;
+    width: 2560px;
+    height: 1000px;
+    margin: 0;
+}
+
+.par {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    width: 800px;
+    height: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    width: 900px;
+    height: 800px;
+    left: 1300px;
+    top: 400px;
+}
+
+.par img {
+    position: absolute;
+    transform: rotate(30deg) translateY(-5%);
+    top: 450px;
+    width: 400px;
+    left: 800px;
+}
+
+.par h4 {
+    position: absolute;
+    width: 600px;
+    height: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 70px;
+    margin: 0;
+    left: 400px;
+    top: 100px;
+}
+
+.par p {
+    position: absolute;
+    width: 600px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0;
+    left: 400px;
+    top: 180px;
+}
+
+.twoOvals {
+    background-image: url(images/Vector.png), url(images/VectorTwo.png);
+    background-size: contain;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 1300px;
+    height: 500px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contactFopm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 675px;
+    height: 64px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 675px;
+    height: 204px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.btnSend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 900px;
+    width: 720px;
+    font-weight: 900;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+
+.btnSend:hover {
+    background-color: #B4B4B4;
+    transition: 1s ease;
+}
+
+
+
+
+
+/* start adoptation */
+
+@media (max-width: 2560px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 2560px;
+        height: 64px;
+        margin-top: 64px;
+    }
+
+    .initial {
+        width: 150px;
+        height: 70px;
+        margin: 0;
+    }
+
+    .navMenu {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 2200px;
+        font-size: 35px;
+    }
+
+    .btnResume {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 80px;
+        font-size: 30px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 2560px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        gap: 35px;
+        padding: 200px;
+        top: 100px;
+        width: 1500px;
+    }
+
+    .iconOne {
+
+        width: 70px;
+        height: 70px;
+    }
+
+    .iconTwo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 400px;
+    }
+
+    h1 {
+        font-size: 90px;
+        width: 1000px;
+    }
+
+    h5 {
+        width: 700px;
+        height: 50px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .ovals {
+        width: 1300px;
+    }
+
+    .arrow {
+        margin-top: 45%;
+        height: 400px;
+    }
+
+    .whoiamCase {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        width: 2560px;
+        top: -300px;
+    }
+
+    .photoQuote {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 700px;
+        height: 800px;
+    }
+
+    .myPhoto {
+        width: 400px;
+        height: 530px;
+    }
+
+    .brush {
+        width: 70px;
+    }
+
+    .quote {
+        font-size: 30px;
+    }
+
+    .aboutText {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        display: flex;
+        left: 500px;
+    }
+
+    .paragraphOne {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0;
+        width: 1260px;
+        height: 250px;
+    }
+
+    .paragraphTwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100;
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0;
+        width: 1260px;
+        height: 250px;
+        margin-top: 100px;
+    }
+
+    .skillSet {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        width: 2560px;
+        top: 400px;
+    }
+
+    .headSkill {
+        position: absolute;
+        top: -300px;
+        left: 85%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+        font-size: 60px;
+        line-height: 40px;
+    }
+
+    .skillPartOne {
+        position: absolute;
+        width: 1000px;
+        height: 568px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100;
+        font-size: 30px;
+        line-height: 40px;
+        left: 300px;
+
+    }
+
+    .skillPartTwo {
+        position: relative;
+        top: 1250px;
+        left: 600px;
+    }
+
+    .skillOval {
+        position: absolute;
+        width: 900px;
+        height: 550px;
+        transform: rotate(200deg);
+    }
+
+    span {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+    }
+
+    .skillArrow {
+        position: absolute;
+        top: 350px;
+        left: 900px;
+        transform: rotate(10deg);
+
+    }
+
+    .progrLang {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 900;
+    }
+
+    .blockExp {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 0;
+        gap: 150px;
+        top: 2300px;
+        width: 2560px;
+        left: -220px;
+    }
+
+    .headExp {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 60px;
+        width: 350px;
+    }
+
+    .textExp {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100;
+        font-size: 30px;
+        line-height: 40px;
+        width: 1000px;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 80px;
+        position: relative;
+        width: 1750px;
+        height: 1000px;
+        top: 2400px;
+    }
+
+    .projectsList {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .projectsList li {
+        width: 600px;
+    }
+
+    .projectsList h4 {
+        width: 600px;
+        height: 60px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+        margin: 15px;
+        margin-left: 0;
+
+    }
+
+    .projectsList p {
+        width: 600px;
+        height: 60px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100;
+        font-size: 25px;
+        line-height: 40px;
+        margin-top: 0;
+    }
+
+    .backdrop {
+        mix-blend-mode: normal;
+    }
+
+    a {
+        width: 30%;
+        margin-bottom: 2%;
+    }
+
+    a:hover img {
+        filter: grayscale(0%);
+    }
+
+    .selected {
+        transition: transform 1s ease-out;
+        transform: scale(1.05) translateY(-5%);
+    }
+
+    .contacts {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-self: flex-end;
+        top: 5500px;
+        position: absolute;
+        width: 2560px;
+        height: 1000px;
+        margin: 0;
+    }
+
+    .par {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        width: 800px;
+        height: 400px;
+    }
+
+    .par img {
+        position: absolute;
+        transform: rotate(30deg) translateY(-5%);
+        top: 450px;
+        width: 400px;
+    }
+
+    .par h4 {
+        position: absolute;
+        width: 600px;
+        height: 60px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 70px;
+        margin: 0;
+        left: 400px;
+        top: 100px;
+    }
+
+    .par p {
+        position: absolute;
+        width: 600px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0;
+        left: 400px;
+        top: 180px;
+    }
+
+    .twoOvals {
+        background-image: url(images/Vector.png), url(images/VectorTwo.png);
+        background-size: contain;
+        position: absolute;
+        background-repeat: no-repeat;
+        width: 1300px;
+        height: 500px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .contactFopm {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    
+    }
+    
+    label {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        margin: 10px;
+    }
+    
+    .email {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 675px;
+        height: 64px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    
+    .message {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 675px;
+        height: 204px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    
+    .btnSend {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: 900px;
+        width: 720px;
+        font-weight: 900;
+        background: #FFFFFF;
+        border-radius: 15px;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+
+}
