@@ -7,11 +7,13 @@ body {
     background: #171719;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    margin:0;
+    margin: 0;
 }
-.resumeClick{
+
+.resumeClick {
     color: black;
 }
+
 .resumeClick:hover {
     background-color: #B4B4B4;
     transition: 1s ease;
@@ -46,7 +48,8 @@ ul {
     fill: #B4B4B4;
     transition: 1s ease;
 }
-.title h1{
+
+.title h1 {
     font-family: 'Candal', sans-serif;
 }
 
@@ -55,6 +58,21 @@ ul {
     background-repeat: no-repeat;
     position: absolute;
     background-position: center;
+}
+
+.skillOval {
+    background-image: url(images/skillOval.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    transform: rotate(1800deg);
+}
+
+.skillArrow {
+    background-image: url(images/Arrow_24.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
 }
 
 .projectsList li {
@@ -98,6 +116,19 @@ a:hover img {
 
 span {
     font-weight: 900;
+}
+
+.twoOvals {
+    background-image: url(images/ovalThree.png), url(images/ovalFour.png);
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.arrowContacts {
+    background-image: url(images/Arrow24.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
 }
 
 .email::placeholder {
@@ -246,11 +277,6 @@ span {
     }
 
     .ovalsGroupOne {
-        background-image: url(images/ovalOne.png), url(images/ovalTwo.png);
-        transform: rotate(180deg);
-        background-repeat: no-repeat;
-        position: absolute;
-        background-position: center;
         width: 634.64px;
         height: 196px;
         left: 333px;
@@ -398,27 +424,17 @@ span {
     }
 
     .skillOval {
-        background-image: url(images/skillOval.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute;
         width: 555.28px;
         height: 560px;
         left: 650px;
         top: -50px;
-        transform: rotate(1800deg);
     }
 
     .skillArrow {
-        background-image: url(images/Arrow_24.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
         height: 200px;
         width: 130px;
         left: 400px;
         top: 230px;
-        transform: rotate(5deg);
     }
 
     .blockExp {
@@ -607,18 +623,11 @@ span {
     }
 
     .twoOvals {
-        background-image: url(images/ovalThree.png), url(images/ovalFour.png);
-        position: absolute;
-        background-repeat: no-repeat;
         width: 546px;
         height: 382px;
     }
 
     .arrowContacts {
-        background-image: url(images/Arrow24.png);
-        background-repeat: no-repeat;
-        position: absolute;
-        background-size: contain;
         width: 265.52px;
         height: 268.14px;
         left: 396.34px;
@@ -631,7 +640,7 @@ span {
     body {
         width: 1440px;
         height: 4146px;
-        margin:0;
+        margin: 0;
     }
 
     .nav {
@@ -664,10 +673,10 @@ span {
         width: 80px;
         height: 40px;
         left: 70px;
-        top: 36px;        
+        top: 36px;
     }
 
-        .btnResume {
+    .btnResume {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -754,7 +763,7 @@ span {
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
-        line-height: 32px;        
+        line-height: 32px;
         text-align: center;
     }
 
@@ -1137,5 +1146,510 @@ span {
         left: 396.34px;
         top: 350px;
         transform: rotate(10deg);
+    }
+}
+
+
+/* 768 768 768 768 768 768 768 768 768 768 768 
+768 768 768 768 768 768 768 768 768 768 768 768 768 768 
+768 768 768 768 768 768 768 768 768 768 768 768 768 768 768  */
+@media only screen and (max-width: 768px) {
+    body {
+        width: 768px;
+        height: 4146px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        gap: 52px;
+        position: absolute;
+        width: 698px;
+        height: 48px;
+        left: 25px;
+        top: 32px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+        position: absolute;
+        width: 416px;
+        height: 24px;
+        left: 150px;
+        top: 44px;
+    }
+
+    .initial {
+        position: absolute;
+        width: 56px;
+        height: 28px;
+        left: 30px;
+        top: 36px;
+    }
+
+    .btnResume {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 600px;
+        top: 30px;
+        width: 60px;
+        height: 48px;
+    }
+
+    .resumeClick {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 48px;
+        top: 32px;
+        font-weight: 900;
+        background: #FFFFFF;
+        border-radius: 4px;
+    }
+
+    .headContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 80px;
+        position: absolute;
+        width: 698px;
+        height: 212px;
+        left: 30px;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 32px;
+        width: 698px;
+        height: 32px;
+    }
+
+    .iconOne,
+    .iconTwo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 32px;
+        isolation: isolate;
+        width: 698px;
+        height: 100px;
+    }
+
+    .title h1 {
+        width: 450px;
+        height: 100px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    .title h2 {
+        width: 149px;
+        height: 32px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .ovalsGroupOne {
+        background-size: contain;
+        position: absolute;
+        position: absolute;
+        width: 436px;
+        height: 138.73px;
+        left: 119px;
+    }
+
+    .arrow {
+        position: absolute;
+        width: 49px;
+        height: 204px;
+        left: 330px;
+        top: 195px;
+    }
+
+    .whoiamCase {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+        position: absolute;
+        width: 698px;
+        height: 332px;
+        opacity: 0.98;
+        left: 30px;
+    }
+
+    .aboutPhoto {
+        width: 204px;
+        height: 264px;
+    }
+
+    .aboutText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 40px;
+        width: 446px;
+        height: 256px;
+    }
+
+    .parOne {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+        width: 446px;
+        height: 120px;
+        left: 280px;
+    }
+
+    .parTwo {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 0px;
+        gap: 10px;
+        width: 446px;
+        height: 96px;
+        left: 300px;
+    }
+
+    .parQuote {
+            display: flex;
+            position: absolute;
+            width: 232.67px;
+            height: 105.27px;
+            left: 4%;
+            right: 69.83%;
+            top: 25.73%;
+    }
+
+    .brush {
+        width: 24px;
+        height: 48px;
+    }
+
+    .quote {
+        width: 174px;
+        height: 48px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .skillSet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 40px;
+        position: absolute;
+        width: 698px;
+        height: 336px;
+        left: 35px;
+        top: 1234px;
+    }
+
+    .skillCore {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 40px;
+        width: 698px;
+        height: 264px;
+    }
+
+    .headSkill h2 {
+        width: 136px;
+        height: 32px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 32px;
+    }
+
+    .skillCore p {
+        width: 376px;
+        height: 264px;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 24px;
+        left: 204px;
+    }
+
+    .skillCore ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+        position: absolute;
+        position: absolute;
+        width: 209px;
+        height: 116px;
+        left: 653px;
+        top: 76px;
+    }
+
+    .skillCore li {
+        width: 60px;
+        height: 32px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .skillOval {
+        width: 350px;
+        height: 272.67px;
+        position: absolute;
+        left: 600px;
+        top:15%;
+    }
+
+    .skillArrow {
+        position: absolute;
+        background-size: contain;
+        width: 96px;
+        height: 200px;
+        left: 483px;
+        top:300px;
+    }
+
+    .blockExp {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 44px;
+        position: absolute;
+        width: 698px;
+        height: 216px;
+        left: 35px;
+        top: 1908px;
+    }
+
+    .headExp {
+        width: 204px;
+        height: 32px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 32px;
+    }
+
+    .parExp {
+        width: 450px;
+        height: 216px;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 24px;
+        left: 250px;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        left: -70px;
+    }
+
+    .projectsList {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;        
+        padding: 0px;
+        gap: 80px;
+        width: 624px;
+        height: 2080px;
+
+    }
+
+    .projectsList li {
+        position: relative;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;
+        width: 624px;
+        height: 460px;
+        margin-bottom: 10%;
+    }
+
+    .projectsList h4 {
+        width: 232px;
+        height: 32px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .projectsList p {
+        width: 346px;
+        height: 48px;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .contacts {
+        position: absolute;
+        width: 698px;
+        height: 707px;
+        left: 35px;
+        top: 4524px;
+    }
+
+    .parContacts {
+        position: absolute;
+        width: 301px;
+        height: 135px;
+        left: 30px;
+        top: 209px;
+    }
+
+    .parContacts h2 {
+        position: absolute;
+        width: 386px;
+        height: 32px;
+        left: 80.68px;
+        top: 109px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 32px;
+        letter-spacing: -0.02em;
+        
+    }
+
+    .parContacts p {
+        position: absolute;
+        width: 294px;
+        height: 72px;
+        left: 87.68px;
+        top: 172px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        position: absolute;
+        width: 375px;
+        height: 364px;
+        left: 258px;
+        top: 467px;
+    }
+
+    .email {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 12px;
+        gap: 4px;
+        width: 375px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 8px;
+    }
+
+    .message {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 12px;
+        gap: 4px;
+        width: 375px;
+        height: 180px;
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 8px;
+    }
+
+    .btnSend {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 48px;
+        width: 375px;
+        height: 48px;
+        font-weight: 900;
+        background: #FFFFFF;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .btnSend:hover {
+        background-color: #B4B4B4;
+        transition: 1s ease;
+    }
+
+    .twoOvals {
+        background-size: contain;
+        width: 470px;
+        height: 287px;
+        top:80px;
+    }
+
+    .arrowContacts {
+        position: absolute;
+        width: 154px;
+        height: 62px;
+        left: 40px;
+        top: 427px;
+        transform: rotate(47.21deg);
     }
 }
