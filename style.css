@@ -1,66 +1,55 @@
 html {
     scroll-behavior: smooth;
 }
-
 body {
     position: relative;
     background: #171719;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
-
 .resumeClick:hover {
     background-color: #B4B4B4;
     transition: 1s ease;
+    cursor: pointer;
 }
-
 a {
     color: white;
     text-decoration: none;
 }
-
 li:hover {
     text-decoration: underline;
     color: #B4B4B4;
 }
-
 ul {
     list-style: none;
 }
-
 .icons {
     cursor: pointer;
 }
-
 .iconOne,
 .iconTwo {
     fill: white;
 }
-
-.iconOne:hover svg,
-.iconTwo:hover svg {
+.iconOne:hover ,
+.iconTwo:hover {
     fill: #B4B4B4;
     transition: 1s ease;
 }
-
 .ovalsGroupOne {
     background-image: url(images/ovalOne.png), url(images/ovalTwo.png);
     background-repeat: no-repeat;
     position: absolute;
     background-position: center;
 }
-
 .projectsList li {
     text-decoration: none;
     cursor: default;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .wrapper {
     position: relative;
     display: inline-block;
 }
-
 .backdrop {
     position: absolute;
     top: 0;
@@ -69,35 +58,34 @@ ul {
     bottom: 0;
     mix-blend-mode: hard-light;
 }
-
 a img {
     filter: grayscale(100%);
     transition: filter 100ms ease;
     mix-blend-mode: hard-light;
 }
-
 a:hover img {
     filter: grayscale(0%);
 }
-
 .hidden {
     display: none;
 }
-
 .selected {
     transition: transform 1s ease-out;
     transform: scale(1.05);
 }
-
 span {
     font-weight: 900;
 }
-
-.twoOvals {
-    background-image: url(images/Vector.png), url(images/VectorTwo.png);
-    background-size: contain;
-    position: absolute;
-    background-repeat: no-repeat;
+.email::placeholder{
+    font-family: 'Montserrat', sans-serif;
+}
+.message::placeholder{
+    font-family: 'Montserrat', sans-serif;
+}
+.btnSend:hover{
+    background-color: #B4B4B4;
+    transition: 1s ease;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1920px) {
@@ -585,6 +573,11 @@ span {
         font-weight: 900;
         background: #FFFFFF;
         border-radius: 4px;
+        cursor: pointer;
+    }
+    .btnSend:hover{
+        background-color: #B4B4B4;
+        transition: 1s ease;
     }
 
     .twoOvals {
