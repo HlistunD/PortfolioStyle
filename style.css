@@ -1,55 +1,71 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     position: relative;
     background: #171719;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    margin:0;
 }
+
 .resumeClick:hover {
     background-color: #B4B4B4;
     transition: 1s ease;
     cursor: pointer;
 }
+
 a {
     color: white;
     text-decoration: none;
 }
-li:hover {
+
+nav li:hover {
     text-decoration: underline;
     color: #B4B4B4;
 }
+
 ul {
     list-style: none;
 }
+
 .icons {
     cursor: pointer;
 }
+
 .iconOne,
 .iconTwo {
     fill: white;
 }
-.iconOne:hover ,
+
+.iconOne:hover,
 .iconTwo:hover {
     fill: #B4B4B4;
     transition: 1s ease;
 }
+.title h1{
+    font-family: 'Candal', sans-serif;
+}
+
 .ovalsGroupOne {
     background-image: url(images/ovalOne.png), url(images/ovalTwo.png);
     background-repeat: no-repeat;
     position: absolute;
     background-position: center;
 }
+
 .projectsList li {
     text-decoration: none;
     cursor: default;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .wrapper {
     position: relative;
     display: inline-block;
 }
+
 .backdrop {
     position: absolute;
     top: 0;
@@ -58,31 +74,39 @@ ul {
     bottom: 0;
     mix-blend-mode: hard-light;
 }
+
 a img {
     filter: grayscale(100%);
     transition: filter 100ms ease;
     mix-blend-mode: hard-light;
 }
+
 a:hover img {
     filter: grayscale(0%);
 }
+
 .hidden {
     display: none;
 }
+
 .selected {
     transition: transform 1s ease-out;
     transform: scale(1.05);
 }
+
 span {
     font-weight: 900;
 }
-.email::placeholder{
+
+.email::placeholder {
     font-family: 'Montserrat', sans-serif;
 }
-.message::placeholder{
+
+.message::placeholder {
     font-family: 'Montserrat', sans-serif;
 }
-.btnSend:hover{
+
+.btnSend:hover {
     background-color: #B4B4B4;
     transition: 1s ease;
     cursor: pointer;
@@ -225,7 +249,6 @@ span {
         background-repeat: no-repeat;
         position: absolute;
         background-position: center;
-        position: absolute;
         width: 634.64px;
         height: 196px;
         left: 333px;
@@ -506,7 +529,7 @@ span {
         font-weight: 900;
         font-size: 36px;
         line-height: 32px;
-        top:60px;
+        top: 60px;
     }
 
     .parContacts p {
@@ -518,7 +541,7 @@ span {
         font-size: 16px;
         line-height: 24px;
         left: 120px;
-        top:140px;
+        top: 140px;
     }
 
     form {
@@ -531,7 +554,7 @@ span {
         width: 375px;
         height: 364px;
         left: 800px;
-        top:200px;
+        top: 200px;
     }
 
     .email {
@@ -575,13 +598,14 @@ span {
         border-radius: 4px;
         cursor: pointer;
     }
-    .btnSend:hover{
+
+    .btnSend:hover {
         background-color: #B4B4B4;
         transition: 1s ease;
     }
 
     .twoOvals {
-        background-image: url(images/ovalThree.png),url(images/ovalFour.png);
+        background-image: url(images/ovalThree.png), url(images/ovalFour.png);
         position: absolute;
         background-repeat: no-repeat;
         width: 546px;
@@ -596,7 +620,520 @@ span {
         width: 265.52px;
         height: 268.14px;
         left: 396.34px;
-        top:350px;
+        top: 350px;
+        transform: rotate(10deg);
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    body {
+        width: 1440px;
+        height: 4146px;
+        margin:0;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        padding: 10px;
+        width: 1300px;
+        height: 48px;
+        left: 30px;
+        top: 32px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 34px;
+        position: absolute;
+        width: 588px;
+        height: 24px;
+        left: 470px;
+        top: 44px;
+    }
+
+    .initial {
+        position: absolute;
+        width: 80px;
+        height: 40px;
+        left: 70px;
+        top: 36px;        
+    }
+
+        .btnResume {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        padding: 12px 48px;
+        width: 162px;
+        height: 48px;
+        left: 1200px;
+        top: 32px;
+    }
+
+    .resumeClick {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 48px;
+        width: 162px;
+        height: 48px;
+        top: 32px;
+        font-weight: 900;
+        background: #FFFFFF;
+        border-radius: 4px;
+    }
+
+    .headContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 100px;
+        position: absolute;
+        width: 1300px;
+        height: 236px;
+        left: 70px;
+        top: 188px;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 32px;
+        width: 96px;
+        height: 32px;
+    }
+
+    .iconOne,
+    .iconTwo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 32px;
+        isolation: isolate;
+        width: 1300px;
+        height: 104px;
+    }
+
+    .title h1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0px;
+        gap: 32px;
+        isolation: isolate;
+        width: 1300px;
+        height: 104px;
+    }
+
+    .title h2 {
+        width: 386.5px;
+        height: 32px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;        
+        text-align: center;
+    }
+
+    .ovalsGroupOne {
+        background-image: url(images/ovalOne.png), url(images/ovalTwo.png);
+        transform: rotate(180deg);
+        background-repeat: no-repeat;
+        position: absolute;
+        background-position: center;
+        width: 634.64px;
+        height: 196px;
+        left: 333px;
+        top: 90px;
+    }
+
+    .arrow {
+        position: absolute;
+        width: 65.33px;
+        height: 205.34px;
+        left: 627px;
+        top: 248.68px;
+    }
+
+    .whoiamCase {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 83px;
+        position: absolute;
+        width: 866px;
+        height: 304px;
+        left: 400px;
+        top: 730px;
+    }
+
+    .aboutPhoto {
+        width: 228px;
+        height: 304px;
+    }
+
+    .aboutText {
+        width: 555px;
+        height: 256px;
+    }
+
+    .parOne {
+        position: absolute;
+        width: 547px;
+        height: 96px;
+        left: 311px;
+        top: 24px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .parTwo {
+        position: absolute;
+        width: 417px;
+        height: 96px;
+        left: 449px;
+        top: 184px;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .parQuote {
+        display: flex;
+        position: absolute;
+        width: 232.67px;
+        height: 105.27px;
+        left: 27.45%;
+        right: 69.83%;
+        top: 25.73%;
+    }
+
+    .brush {
+        width: 28.06px;
+        height: 52.27px;
+    }
+
+    .quote {
+        position: absolute;
+        width: 196px;
+        height: 48px;
+        left: 50px;
+        top: -10px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .skillSet {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 1105.52px;
+        height: 480.55px;
+        left: 180px;
+        top: 1250px;
+    }
+
+    .skillCore {
+        position: absolute;
+        top: 160px;
+        width: 1105.52px;
+        height: 300.94px;
+        left: calc(50% - 1105.52px/2 - 0.24px);
+    }
+
+    .headSkill h2 {
+        left: 43%;
+        position: absolute;
+        width: 136px;
+        height: 32px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 32px;
+    }
+
+    .skillCore p {
+        position: absolute;
+        width: 535px;
+        height: 168px;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.05rem;
+    }
+
+    .skillCore ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+        position: absolute;
+        width: 454.52px;
+        height: 150px;
+        left: 700px;
+
+    }
+
+    .skillCore li {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .skillOval {
+        background-image: url(images/skillOval.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 555.28px;
+        height: 560px;
+        left: 630px;
+        top: -50px;
+        transform: rotate(1800deg);
+    }
+
+    .skillArrow {
+        background-image: url(images/Arrow_24.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        height: 200px;
+        width: 130px;
+        left: 400px;
+        top: 230px;
+        transform: rotate(5deg);
+    }
+
+    .blockExp {
+        position: absolute;
+        width: 805px;
+        height: 192px;
+        left: 180px;
+        top: 1900px;
+    }
+
+    .headExp {
+        display: flex;
+        justify-content: baseline;
+        position: absolute;
+        width: 204px;
+        height: 32px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 32px;
+    }
+
+    .parExp {
+        position: absolute;
+        width: 519px;
+        height: 192px;
+        left: 300px;
+        top: 15px;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.05rem;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 80px;
+        position: absolute;
+        width: 1288px;
+        height: 1000px;
+        left: -400px;
+        top: 2300px;
+    }
+
+    .projectsList {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0px;
+        gap: 40px;
+        width: 1288px;
+        height: 460px;
+    }
+
+    .projectsList li {
+        position: relative;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;
+        width: 624px;
+        height: 460px;
+        margin-bottom: 10%;
+    }
+
+    .projectsList h4 {
+        width: 232px;
+        height: 32px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .projectsList p {
+        width: 346px;
+        height: 48px;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .contacts {
+        position: absolute;
+        width: 1192px;
+        height: 539px;
+        left: 164px;
+        top: 3700px;
+    }
+
+    .parContacts {
+        position: absolute;
+        width: 546px;
+        height: 382px;
+    }
+
+    .parContacts h2 {
+        position: absolute;
+        width: 330px;
+        height: 32px;
+        left: 120px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 32px;
+        top: 60px;
+    }
+
+    .parContacts p {
+        position: absolute;
+        width: 330px;
+        height: 72px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        left: 120px;
+        top: 140px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        position: absolute;
+        width: 375px;
+        height: 364px;
+        left: 800px;
+        top: 200px;
+    }
+
+    .email {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 12px;
+        gap: 4px;
+        width: 375px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 8px;
+    }
+
+    .message {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 12px;
+        gap: 4px;
+        width: 375px;
+        height: 180px;
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 8px;
+    }
+
+    .btnSend {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 48px;
+        width: 375px;
+        height: 48px;
+        font-weight: 900;
+        background: #FFFFFF;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .btnSend:hover {
+        background-color: #B4B4B4;
+        transition: 1s ease;
+    }
+
+    .twoOvals {
+        background-image: url(images/ovalThree.png), url(images/ovalFour.png);
+        position: absolute;
+        background-repeat: no-repeat;
+        width: 546px;
+        height: 382px;
+    }
+
+    .arrowContacts {
+        background-image: url(images/Arrow24.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: contain;
+        width: 265.52px;
+        height: 268.14px;
+        left: 396.34px;
+        top: 350px;
         transform: rotate(10deg);
     }
 }
