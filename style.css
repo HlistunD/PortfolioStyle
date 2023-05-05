@@ -1484,14 +1484,17 @@ span {
         left: 250px;
     }
 
-    .projects {
+    .projects{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        position: absolute;
-        left: -70px;
+        position: absolute;        
+        padding: 0px;
+        gap: 80px;
+        width: 624px;
+        left:80px;
+        height: 2080px;
     }
-
     .projectsList {
         display: flex;
         flex-direction: column;
@@ -1500,8 +1503,8 @@ span {
         padding: 0px;
         gap: 80px;
         width: 624px;
+        left:-10px;
         height: 2080px;
-
     }
 
     .projectsList li {
