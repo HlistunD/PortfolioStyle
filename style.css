@@ -9,7 +9,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin:0;
 }
-
+.resumeClick{
+    color: black;
+}
 .resumeClick:hover {
     background-color: #B4B4B4;
     transition: 1s ease;
